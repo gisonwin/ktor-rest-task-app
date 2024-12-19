@@ -1,0 +1,14 @@
+allprojects{
+	repositories {
+	   maven {url 'file:///D:/gradlerepo'}
+	   mavenLocal()
+	   maven {name "Alibaba" ; url "https://maven.aliyun.com/repository/public"}
+	   mavenCentral()
+	}
+	buildscript{
+		repositories{
+		 maven {name "Alibaba"; url "https://maven.aliyun.com/repository/public"}
+		 maven {name "M2"; url "https://plugins.gradle.org/m2"}
+		}
+	}
+}
